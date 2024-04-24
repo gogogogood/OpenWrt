@@ -28,7 +28,7 @@ uci commit network
 #uci delete dhcp.lan.ra                                         # 路由通告服务，设置为“已禁用”
 #uci delete dhcp.lan.ra_management                              # 路由通告服务，设置为“已禁用”
 #uci delete dhcp.lan.dhcpv6                                     # DHCPv6 服务，设置为“已禁用”
-#uci set dhcp.lan.ignore='1'                                    # 关闭DHCP功能
+uci set dhcp.lan.ignore='1'                                    # 关闭DHCP功能
 #uci set dhcp.@dnsmasq[0].filter_aaaa='1'                       # DHCP/DNS→高级设置→解析 IPv6 DNS 记录——禁止
 #uci set dhcp.@dnsmasq[0].cachesize='0'                         # DHCP/DNS→高级设置→DNS 查询缓存的大小——设置为'0'
 #uci add dhcp domain
