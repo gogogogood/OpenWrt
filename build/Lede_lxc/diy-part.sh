@@ -14,11 +14,11 @@ cat >> ${FILE_DEFAULT_UCI} <<-EOF
 #uci set network.lan.ifname='eth0 eth1'                         # 设置lan口物理接口为eth0、eth1
 #uci set network.lan.ifname='eth0'                              # 设置lan口物理接口为eth0
 uci set network.lan.proto='static'                              # lan口静态IP
-uci set network.lan.ipaddr='192.168.2.3'                        # IPv4 地址(openwrt后台地址)
+uci set network.lan.ipaddr='192.168.1.2'                        # IPv4 地址(openwrt后台地址)
 uci set network.lan.netmask='255.255.255.0'                     # IPv4 子网掩码
-uci set network.lan.gateway='192.168.2.1'                       # IPv4 网关
-uci set network.lan.broadcast='192.168.2.255'                   # IPv4 广播
-uci set network.lan.dns='223.5.5.5'             # DNS(多个DNS要用空格分开)
+uci set network.lan.gateway='192.168.1.1'                       # IPv4 网关
+uci set network.lan.broadcast='192.168.1.255'                   # IPv4 广播
+uci set network.lan.dns='223.5.5.5 114.114.114.114'             # DNS(多个DNS要用空格分开)
 #uci set network.lan.mtu='1492'                                 # lan口mtu设置为1492
 #uci set network.lan.delegate='0'                               # 去掉LAN口使用内置的 IPv6 管理
 #uci delete network.lan.ip6assign                               # 接口→LAN→IPv6 分配长度——关闭，恢复uci set network.lan.ip6assign='64'
@@ -70,9 +70,14 @@ fi
 ##########################################添加插件###################################################
 pushd ${HOME_PATH}/package > /dev/null
 
-#echo "添加插件 luci-app-openclash"
-#git clone --depth=1 https://github.com/vernesong/OpenClash
+echo "添加插件 luci-app-openclash"
+git clone --depth=1 https://github.com/vernesong/OpenClash
 
+#echo "添加插件 luci-app-passwall"
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+
+#echo "添加插件 luci-app-ssr-plus"
+#git clone --depth=1 https://github.com/fw876/helloworld
 
 #echo "删除内置argon主题,使用原作者最新argon"
 #find ${HOME_PATH}/package/feeds/luci -type d -name "luci-theme-argon" | xargs sudo rm -rf
