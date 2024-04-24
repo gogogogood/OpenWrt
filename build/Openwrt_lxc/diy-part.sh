@@ -73,8 +73,8 @@ fi
 ##########################################添加插件###################################################
 pushd ${HOME_PATH}/package > /dev/null
 
-#echo "添加插件 luci-app-passwall"
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+echo "添加插件 luci-app-OpenClash"
+git clone --depth=1 https://github.com/vernesong/OpenClash
 
 #echo "添加插件 luci-app-ssr-plus"
 #git clone --depth=1 https://github.com/fw876/helloworld
