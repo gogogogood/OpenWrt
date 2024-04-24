@@ -70,8 +70,8 @@ fi
 ##########################################添加插件###################################################
 pushd ${HOME_PATH}/package > /dev/null
 
-echo "添加插件 luci-app-openclash"
-git clone --depth=1 https://github.com/vernesong/OpenClash
+#echo "添加插件 luci-app-openclash"
+#git clone --depth=1 https://github.com/vernesong/OpenClash
 
 
 #echo "删除内置argon主题,使用原作者最新argon"
