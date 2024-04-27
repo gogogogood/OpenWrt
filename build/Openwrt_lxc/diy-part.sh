@@ -79,6 +79,9 @@ git clone --depth=1 https://github.com/vernesong/OpenClash
 echo "添加插件 luci-app-ssr-plus"
 git clone --depth=1 https://github.com/fw876/helloworld
 
+echo "添加插件 luci-app-ddns-go"
+git clone --depth=1 https://github.com/sirpdboy/luci-app-ddns-go
+
 #echo "删除内置argon主题,使用原作者最新argon"
 #find ${HOME_PATH}/package/feeds/luci -type d -name "luci-theme-argon" | xargs sudo rm -rf
 # lede源码对应主题
