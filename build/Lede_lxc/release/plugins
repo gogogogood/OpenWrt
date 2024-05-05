@@ -5,7 +5,7 @@ luci-app-diskman
 luci-app-filetransfer
 luci-app-firewall
 luci-app-mosdns
-luci-app-passwall
+luci-app-openclash
 luci-app-pushbot
 luci-app-rebootschedule
 luci-app-smartdns
