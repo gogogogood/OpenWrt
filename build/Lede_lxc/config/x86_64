@@ -4,7 +4,7 @@ CONFIG_TARGET_x86_64_DEVICE_generic=y
 CONFIG_DEVEL=y
 CONFIG_CCACHE=y
 CONFIG_NODEJS_14=y
-# CONFIG_NODEJS_16 is not set
+# CONFIG_NODEJS_18 is not set
 CONFIG_NODEJS_ICU_NONE=y
 CONFIG_PACKAGE_UnblockNeteaseMusic=y
 CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
@@ -64,6 +64,8 @@ CONFIG_PACKAGE_kmod-nft-tproxy=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
 # CONFIG_PACKAGE_kmod-shortcut-fe-cm is not set
 # CONFIG_PACKAGE_kmod-tcp-bbr is not set
+CONFIG_PACKAGE_libcap-bin=y
+CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
 CONFIG_PACKAGE_libevent2=y
 CONFIG_PACKAGE_libgpiod=y
 CONFIG_PACKAGE_libi2c=y
@@ -75,12 +77,14 @@ CONFIG_PACKAGE_libnatpmp=y
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_libnftnl=y
 CONFIG_PACKAGE_libparted=y
+CONFIG_PACKAGE_libruby=y
 CONFIG_PACKAGE_libstdcpp=y
 CONFIG_PACKAGE_libugpio=y
 CONFIG_PACKAGE_libustream-wolfssl=m
 CONFIG_PACKAGE_libuv=y
 CONFIG_PACKAGE_libwebsockets-full=y
 CONFIG_PACKAGE_libwolfssl=y
+CONFIG_PACKAGE_libyaml=y
 CONFIG_PACKAGE_lm-sensors-detect=y
 CONFIG_PACKAGE_lsblk=y
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
@@ -166,6 +170,17 @@ CONFIG_PACKAGE_perlbase-unicore=y
 CONFIG_PACKAGE_perlbase-utf8=y
 CONFIG_PACKAGE_perlbase-xsloader=y
 CONFIG_PACKAGE_redsocks2=y
+CONFIG_PACKAGE_ruby=y
+CONFIG_PACKAGE_ruby-bigdecimal=y
+CONFIG_PACKAGE_ruby-date=y
+CONFIG_PACKAGE_ruby-digest=y
+CONFIG_PACKAGE_ruby-enc=y
+CONFIG_PACKAGE_ruby-forwardable=y
+CONFIG_PACKAGE_ruby-pstore=y
+CONFIG_PACKAGE_ruby-psych=y
+CONFIG_PACKAGE_ruby-stringio=y
+CONFIG_PACKAGE_ruby-strscan=y
+CONFIG_PACKAGE_ruby-yaml=y
 # CONFIG_PACKAGE_samba4-libs is not set
 # CONFIG_PACKAGE_samba4-server is not set
 CONFIG_PACKAGE_shadow-tls=y
@@ -229,11 +244,9 @@ CONFIG_PACKAGE_libavahi-dbus-support=y
 CONFIG_PACKAGE_libdaemon=y
 CONFIG_PACKAGE_libdbus=y
 CONFIG_PACKAGE_libexpat=y
-CONFIG_PACKAGE_libgmp=y
 CONFIG_PACKAGE_libgnutls=y
 CONFIG_PACKAGE_libnettle=y
 CONFIG_PACKAGE_libpopt=y
 CONFIG_PACKAGE_libtasn1=y
 CONFIG_PACKAGE_libtirpc=y
 CONFIG_PACKAGE_liburing=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server is not set
